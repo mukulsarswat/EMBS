@@ -1,0 +1,24 @@
+ORG 0000H
+LJMP main
+
+ORG 0030H
+DELAY : 
+            MOV R1,#4
+	  LOOP3: MOV R2,#250
+	  LOOP2: MOV R3,#250
+	  LOOP1: NOP
+	  DJNZ R3,LOOP1
+	  DJNZ R2,LOOP2
+	  DJNZ R1,LOOP3
+	  RET
+	  
+	  
+ORG 0200H
+main : MOV P1,#00H
+repeat:    SETB P1.0
+	   LCALL DELAY
+	   CLR P1.0
+	   LCALL DELAY 
+	   LJMP repeat
+	   
+END 
