@@ -1,3 +1,5 @@
+// The program is done with the help of Timer ...
+
 ORG 0000H
 LJMP main
 ORG 0100H
