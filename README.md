@@ -1,47 +1,49 @@
-# 🧩 Embedded Systems Project
+# EMBS: Embedded Microcontroller Building Blocks 🛠️
 
-Welcome to the **Embedded Systems Project repository!**  
-This project aims to **develop and document embedded system solutions**, starting with **Assembly Language Programming (ALP)** and transitioning to **Embedded C** for scalable and maintainable implementations.
-
-This README will guide you through the project setup, usage, and contribution processes.
+A curated collection of low-level embedded system programs written in 8051 assembly language. This repository showcases modular implementations of timers, interrupts, PWM, UART, and GPIO control—ideal for learners, educators, and recruiters seeking hands-on microcontroller experience.
 
 ---
 
-## 📚 Table of Contents
+## 📂 Repository Overview
 
-1. [Project Overview](#project-overview)  
-2. [Getting Started](#getting-started)  
-3. [Prerequisites](#prerequisites)  
-4. [Installation](#installation)  
-5. [Compiling and Running](#compiling-and-running)  
-6. [Project Structure](#project-structure)  
-7. [Code Documentation](#code-documentation)  
-   - [Assembly Language Programming (ALP)](#assembly-language-programming-alp)  
-   - [Embedded C](#embedded-c)  
-8. [Contributing](#contributing)  
-9. [License](#license)  
-10. [Contact](#contact)
+Each `.a51` file is a standalone assembly program targeting the 8051 microcontroller. Projects are organized by functionality and simulation clarity.
 
----
-
-## 🧠 Project Overview
-
-This project focuses on building embedded system solutions with two primary stages:
-
-- **Assembly Language Programming (ALP):**  
-  Initial phase focusing on low-level programming for **hardware control**, **timing precision**, and **optimization**.
-
-- **Embedded C:**  
-  Transition phase using **C programming** for **modularity**, **readability**, and **hardware abstraction**, making the code more adaptable for future enhancements.
+| Filename | Description |
+|----------|-------------|
+| `LED BLINKING.a51` | Basic LED blinking using delay loops |
+| `LED BLINKING 1.a51` | Variant with different timing logic |
+| `Toggle_P1.0.a51` | Toggles pin P1.0 with delay |
+| `Square_wave_generate.a51` | Generates square wave using timer toggling |
+| `PWM_Generation.a51` | Pulse Width Modulation using timers |
+| `Max_Delay_with_Timer0_Mode1.A51` | Maximum delay using Timer0 in Mode 1 |
+| `10ms_20ms_Pulse_Using_Both_Timers.A51` | Dual-timer pulse generation |
+| `A-SEND.a51` | Transmits character 'A' via UART |
+| `ENDSEMQUE.a51` | Serial message transmission routine |
+| `Serial_Communication_using_Interrupts_(UART_RX_TX).a51` | UART communication with interrupt handling |
+| `counter.a51` | Simple counter implementation |
 
 ---
 
-## 🧩 Prerequisites
+## 🎯 Project Highlights
 
-Before you begin, ensure you have the following tools installed:
+- ✅ **Timer-based delay and waveform generation**
+- ✅ **PWM signal synthesis**
+- ✅ **UART transmission with and without interrupts**
+- ✅ **GPIO toggling and control**
+- ✅ **Interrupt-driven serial routines**
 
-- **Assembler/Emulator** (e.g., Keil µVision, TASM, MASM, or MPLAB)
-- **C Compiler** (e.g., Keil C51, GCC for ARM, or AVR-GCC)
-- **Microcontroller Development Kit** (e.g., 8051, ARM Cortex-M, or Arduino)
-- **Serial Communication Interface** (for debugging and testing)
-- **Git** (for version control)
+---
+
+## 📌 Future Additions
+
+Planned modules include:
+- FSM-based appliance controllers
+- Sensor interfacing (IR, temperature)
+- Interrupt-driven timers and counters
+- Educational README cards and waveform annotations
+
+---
+
+## 🙌 Contributions
+
+Feel free to fork, star ⭐, and contribute! Whether you're adding new routines, improving documentation, or sharing simulation setups—your input is welcome.
