@@ -1,5 +1,5 @@
-<<<-----""Welcome to the Embedded Systems Project repository! This project aims to develop and document embedded system solutions, starting with Assembly Language Programming (ALP) and transitioning to Embedded C. 
-This README will guide you through the project setup, usage, and contribution processes.""------------>>>>
+Welcome to the Embedded Systems Project repository! This project aims to develop and document embedded system solutions, starting with Assembly Language Programming (ALP) and transitioning to Embedded C. 
+This README will guide you through the project setup, usage, and contribution processes.
 
 Table of Contents ::
 1,Project Overview
